@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuardian - Hacker Terminal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a2340;
+            
+        }
+        .container2 {
+            margin: auto;
+            align-items: center;
+            max-width: 650px;
+        }
+        .terminal {
+            background-color: #222;
+            width: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px 0px rgba(0, 255, 0, 0.5);
+            border: 2px solid #0f0;
+            position: relative;
+        }
+
+        .terminal::before {
+            content: "CHALLENGE";
+            position: relative;
+            top: 0;
+            left: 0;
+            padding: 5px 10px;
+            background-color: #0f0;
+            color: #000;
+            font-size: 14px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .terminal-header {
+            background-color: #111;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .terminal-header div {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+            background-color: #f00;
+        }
+
+        .close {
+            background-color: #f00;
+        }
+
+        .minimize {
+            background-color: #ff0;
+        }
+
+        .maximize {
+            background-color: #0f0;
+        }
+
+        .terminal-body {
+            padding: 20px;
+            padding-bottom: 50px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #0ff;
+        }
+
+        .para {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #0f0;
+        }
+
+        .command-line {
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            right: 20px;
+            height: 30px;
+            background-color: #222;
+            border-top: 2px solid #0f0;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            animation: blink-caret 1s steps(1) infinite;
+        }
+
+        @keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .command-line input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+            width: calc(100% - 20px);
+            margin-left: 5px;
+            font-size: 14px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="./Home.html" class="logo"><img src="../img/logo1.png" alt="logo"></a>
+            <ul class="nav-list">
+                <li><a href="Home.html" >Home</a></li>
+                <li><a href="Ranking.html">Rankings</a></li>
+                <li><a href="Practice.html">Practice</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <img src="../img/User.jpg" alt="User Avatar">
+                <span class="username" id="name"></span>
+                <div class="dropdown-menu">
+                    <a href="Profile.html">Profile</a>
+                    <a href="HelpCenter.html">Help Center</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="../index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br><br><br><br><br><br>
+<div class="container2">
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="close"></div>
+            <div class="minimize"></div>
+            <div class="maximize"></div>
+        </div>
+        <div class="terminal-body">
+            <h1>Hackers Gathering</h1>
+            <p class="para"><strong>Points:</strong> <span style="color: #ff0;">50</span></p>
+            <p class="para"><strong>Difficulty:</strong> <span style="color: #00f;">Easy</span></p>
+            <p class="para"><strong>Category:</strong> <span style="color: #f0f;">General Information</span></p>
+            <p class="para"><strong>Times Solved:</strong> <span style="color: #f90;">1500</span></p>
+            <p class="para"><strong>Description:</strong></p>
+            <p style="color: #0f0;">I am a renowned cybersecurity conference held annually in Las Vegas during August. As the largest gathering for hackers worldwide, I'm known for my strict cash-only policy – no credit cards or online bookings allowed. Who am I?</p>
+            <div id="alerts"></div>
+            <div class="command-line">
+                <span>$</span>
+                <input type="text" placeholder="Type your flag here..." id="command-input">
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<footer>
+    <div class="container">
+        <div class="left">
+            <a href="#" class="fade1" style="color: white;"><img src="../img/logo2.png" alt="Logo" style="width: 200px; height: 25px;"></a>
+            <br><br>
+            <p style="opacity: 50%;">COPYRIGHT &copy; 2024 CTF Platform. All rights reserved.</p>
+        </div>
+        <div class="right">
+            <p>
+                <a href="#" class="fade1" style="color: white;">INQUIRIES &nbsp;</a>
+                <a href="#" class="fade1" style="color: white;">TERMS & CONDITIONS &nbsp;</a>
+                <a href="#" class="fade1" style="color: white;">PRIVACY POLICY &nbsp;</a>
+                <a href="#" class="fade1" style="color: white;">BRAND</a>
+            </p>
+            <br>
+            <p>
+                <a href="https://discord.com/" class="white" target="_blank" title="Join our Discord Server!"><img src="../img/Discord.png" alt="Discord Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;</a>
+                <a href="https://www.instagram.com/" class="white" target="_blank" title="Follow us on Instagram!"><img src="../img/Instagram.png" alt="Instagram Logo" class="fade1" style="width: 22px; height: 22px;">&nbsp;&nbsp;</a>
+                <a href="https://twitter.com/" class="white" target="_blank" title="Follow us on Twitter!"><img src="../img/Twitter.png" alt="Twitter Logo" class="fade1" style="width: 20px; height: 18px;">&nbsp;&nbsp;</a>
+                <a href="https://facebook.com/" class="white" target="_blank" title="Check out our Facebook Page!"><img src="../img/Facebook.png" alt="Facebook Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;</a>
+                <a href="https://reddit.com/" class="white" target="_blank" title="Check out our Subreddit!"><img src="../img/Reddit.png" alt="Reddit Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;</a>
+                <a href="https://github.com/" class="white" target="_blank" title="Check out our Github profile!"><img src="../img/Github.png" alt="Github Logo" class="fade1" style="width: 23px; height: 20px;">&nbsp;&nbsp;</a>
+                <a href="https://youtube.com/" class="white" target="_blank" title="Subscribe to our YouTube channel!"><img src="../img/Youtube.png" alt="Youtube Logo" class="fade1" style="width: 23px; height: 17px;"></a>
+
+            </p>
+        </div>
+    </div>
+</footer>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('command-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                var flag = this.value.trim();
+                if (flag.toLowerCase() === 'defcon') {
+                    showAlert('Flag is correct!', 'success');
+                } else {
+                    showAlert('Flag is incorrect!', 'danger');
+                }
+                this.value = ''; 
+            }
+        });
+
+        function showAlert(message, type) {
+            var alertHtml = '<div class="alert alert-' + type + ' alert-dismissible fade show" role="alert">' +
+                            message +
+                            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
+                            '<span aria-hidden="true">&times;</span>' +
+                            '</button>' +
+                            '</div>';
+            $('#alerts').html(alertHtml);
+        }
+    </script>
+    <script>
+        var username = localStorage.getItem('username');
+        document.getElementById('name').innerText = username;
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Information Challenges</title>
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/navprofile.css">
+    <style>
+        
+        body {
+            background-color: #1a2340;
+        }
+
+        .challenge {
+            background-color: #444; 
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .challenge:hover {
+            transform: translateY(-5px);
+        }
+
+        .challenge p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .difficulty {
+            font-style: italic;
+            color: #e2e2e2; 
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="./Home.html" class="logo"><img src="../img/logo1.png" alt="logo"></a>
+            <ul class="nav-list">
+                <li><a href="Home.html" >Home</a></li>
+                <li><a href="Ranking.html">Rankings</a></li>
+                <li><a href="Practice.html">Practice</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <img src="../img/User.jpg" alt="User Avatar">
+                <span class="username" id="name"></span>
+                <div class="dropdown-menu">
+                    <a href="Profile.html">Profile</a>
+                    <a href="HelpCenter.html">Help Center</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="../index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="container" style="margin-top: 20px;">
+        <select id="difficultyFilter" onchange="filterChallenges()" style="padding: 15px; font-size: 16px; border-radius: 35px; background-color: rgb(4, 4, 56); color: white; border: none; outline: none; cursor: pointer;">
+            <option value="all">All Difficulties</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    
+        <div class="container" id="challengeContainer" style="display: flex; flex-direction: column; padding-top: 20px;">
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="container" style="margin-top: 20px;">
+        <div class="container" style="display: flex; flex-direction: column;">
+            <div class="challenge" style="background-color: rgb(4, 4, 56); border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0px 4px 8px #0f0; transition: transform 0.2s ease; overflow: hidden; position: relative;">
+                <a href="HackersGathering.html" style="text-decoration: none;"><h2 style="font-size: 24px; margin-bottom: 10px; color: #11c911; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Hackers Gathering</h2></a>
+                <p style="font-size: 18px; margin: 5px 0; color: #0f0;"><span class="points" style="font-weight: bold; color: #e4ecf3;">Points:</span> 50</p>
+                <p class="difficulty easy" style="font-size: 18px; margin: 5px 0; font-style: italic; color: #f7f6f5; position: absolute; top: 10px; right: 10px;">Difficulty: <span style="color: #4CAF50;">Easy</span></p>
+            </div>
+    
+            <div class="challenge" style="background-color: rgb(4, 4, 56); border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0px 4px 8px #0f0; transition: transform 0.2s ease; overflow: hidden; position: relative;">
+                <h2 style="font-size: 24px; margin-bottom: 10px; color: #11c911; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Who am I</h2>
+                <p style="font-size: 18px; margin: 5px 0; color: #FF9800;"><span class="points" style="font-weight: bold; color: #e4ecf3;">Points:</span> 75</p>
+                <p class="difficulty medium" style="font-size: 18px; margin: 5px 0; font-style: italic; color: #f7f6f5; position: absolute; top: 10px; right: 10px;">Difficulty: <span style="color: #FF9800;">Medium</span></p>
+            </div>
+    
+            <div class="challenge" style="background-color: rgb(4, 4, 56); border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0px 4px 8px #0f0; transition: transform 0.2s ease; overflow: hidden; position: relative;">
+                <h2 style="font-size: 24px; margin-bottom: 10px; color: #11c911; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Malware</h2>
+                <p style="font-size: 18px; margin: 5px 0; color: #F44336;"><span class="points" style="font-weight: bold; color: #e4ecf3;">Points:</span> 100</p>
+                <p class="difficulty hard" style="font-size: 18px; margin: 5px 0; font-style: italic; color: #f7f6f5; position: absolute; top: 10px; right: 10px;">Difficulty: <span style="color: #F44336;">Hard</span></p>
+            </div>
+            
+            <div class="challenge" style="background-color: rgb(4, 4, 56); border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0px 4px 8px #0f0; transition: transform 0.2s ease; overflow: hidden; position: relative;">
+                <h2 style="font-size: 24px; margin-bottom: 10px; color: #11c911; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Pay Me</h2>
+                <p style="font-size: 18px; margin: 5px 0; color: #F44336;"><span class="points" style="font-weight: bold; color: #e4ecf3;">Points:</span> 100</p>
+                <p class="difficulty hard" style="font-size: 18px; margin: 5px 0; font-style: italic; color: #f7f6f5; position: absolute; top: 10px; right: 10px;">Difficulty: <span style="color: #F44336;">Hard</span></p>
+            </div>
+            <div class="challenge" style="background-color: rgb(4, 4, 56); border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0px 4px 8px #0f0; transition: transform 0.2s ease; overflow: hidden; position: relative;">
+                <a href="HackersGathering.html" style="text-decoration: none;"><h2 style="font-size: 24px; margin-bottom: 10px; color: #11c911; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Greeks</h2></a>
+                <p style="font-size: 18px; margin: 5px 0; color: #0f0;"><span class="points" style="font-weight: bold; color: #e4ecf3;">Points:</span> 50</p>
+                <p class="difficulty easy" style="font-size: 18px; margin: 5px 0; font-style: italic; color: #f7f6f5; position: absolute; top: 10px; right: 10px;">Difficulty: <span style="color: #4CAF50;">Easy</span></p>
+            </div>
+            <div class="challenge" style="background-color: rgb(4, 4, 56); border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0px 4px 8px #0f0; transition: transform 0.2s ease; overflow: hidden; position: relative;">
+                <a href="HackersGathering.html" style="text-decoration: none;"><h2 style="font-size: 24px; margin-bottom: 10px; color: #11c911; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Back To History</h2></a>
+                <p style="font-size: 18px; margin: 5px 0; color: #0f0;"><span class="points" style="font-weight: bold; color: #e4ecf3;">Points:</span> 50</p>
+                <p class="difficulty easy" style="font-size: 18px; margin: 5px 0; font-style: italic; color: #f7f6f5; position: absolute; top: 10px; right: 10px;">Difficulty: <span style="color: #4CAF50;">Easy</span></p>
+            </div>
+            <div class="challenge" style="background-color: rgb(4, 4, 56); border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0px 4px 8px #0f0; transition: transform 0.2s ease; overflow: hidden; position: relative;">
+                <h2 style="font-size: 24px; margin-bottom: 10px; color: #11c911; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Founder</h2>
+                <p style="font-size: 18px; margin: 5px 0; color: #F44336;"><span class="points" style="font-weight: bold; color: #e4ecf3;">Points:</span> 100</p>
+                <p class="difficulty hard" style="font-size: 18px; margin: 5px 0; font-style: italic; color: #f7f6f5; position: absolute; top: 10px; right: 10px;">Difficulty: <span style="color: #F44336;">Hard</span></p>
+            </div>
+            <div class="challenge" style="background-color: rgb(4, 4, 56); border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0px 4px 8px #0f0; transition: transform 0.2s ease; overflow: hidden; position: relative;">
+                <h2 style="font-size: 24px; margin-bottom: 10px; color: #11c911; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Business Gathering</h2>
+                <p style="font-size: 18px; margin: 5px 0; color: #F44336;"><span class="points" style="font-weight: bold; color: #e4ecf3;">Points:</span> 100</p>
+                <p class="difficulty hard" style="font-size: 18px; margin: 5px 0; font-style: italic; color: #f7f6f5; position: absolute; top: 10px; right: 10px;">Difficulty: <span style="color: #F44336;">Hard</span></p>
+            </div>
+            <div class="challenge" style="background-color: rgb(4, 4, 56); border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0px 4px 8px #0f0; transition: transform 0.2s ease; overflow: hidden; position: relative;">
+                <h2 style="font-size: 24px; margin-bottom: 10px; color: #11c911; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Contribute</h2>
+                <p style="font-size: 18px; margin: 5px 0; color: #FF9800;"><span class="points" style="font-weight: bold; color: #e4ecf3;">Points:</span> 75</p>
+                <p class="difficulty medium" style="font-size: 18px; margin: 5px 0; font-style: italic; color: #f7f6f5; position: absolute; top: 10px; right: 10px;">Difficulty: <span style="color: #FF9800;">Medium</span></p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Add more challenges here -->
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+    <div class="container">
+        <div class="left">
+            <a href="#" class="fade1" style="color: white;"><img src="../img/logo2.png" alt="Logo" style="width: 200px; height: 25px;"></a>
+            <br><br>
+            <p style="opacity: 50%;">COPYRIGHT &copy; 2024 CTF Platform. All rights reserved.</p>
+        </div>
+        <div class="right">
+            <p>
+                <a href="#" class="fade1" style="color: white;">INQUIRIES &nbsp;</a>
+                <a href="#" class="fade1" style="color: white;">TERMS & CONDITIONS &nbsp;</a>
+                <a href="#" class="fade1" style="color: white;">PRIVACY POLICY &nbsp;</a>
+                <a href="#" class="fade1" style="color: white;">BRAND</a>
+            </p>
+            <br>
+            <p>
+                <a href="https://discord.com/" class="white" target="_blank" title="Join our Discord Server!"><img src="../img/Discord.png" alt="Discord Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;</a>
+                <a href="https://www.instagram.com/" class="white" target="_blank" title="Follow us on Instagram!"><img src="../img/Instagram.png" alt="Instagram Logo" class="fade1" style="width: 22px; height: 22px;">&nbsp;&nbsp;</a>
+                <a href="https://twitter.com/" class="white" target="_blank" title="Follow us on Twitter!"><img src="../img/Twitter.png" alt="Twitter Logo" class="fade1" style="width: 20px; height: 18px;">&nbsp;&nbsp;</a>
+                <a href="https://facebook.com/" class="white" target="_blank" title="Check out our Facebook Page!"><img src="../img/Facebook.png" alt="Facebook Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;</a>
+                <a href="https://reddit.com/" class="white" target="_blank" title="Check out our Subreddit!"><img src="../img/Reddit.png" alt="Reddit Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;</a>
+                <a href="https://github.com/" class="white" target="_blank" title="Check out our Github profile!"><img src="../img/Github.png" alt="Github Logo" class="fade1" style="width: 23px; height: 20px;">&nbsp;&nbsp;</a>
+                <a href="https://youtube.com/" class="white" target="_blank" title="Subscribe to our YouTube channel!"><img src="../img/Youtube.png" alt="Youtube Logo" class="fade1" style="width: 23px; height: 17px;"></a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script>
+    var username = localStorage.getItem('username');
+    document.getElementById('name').innerText = username;
+</script>
+<script src="/JS/Filter.js"></script>
+
+</body>
+</html>

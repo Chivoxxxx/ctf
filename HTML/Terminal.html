@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <meta name="description" content="Enter Terminal 1 to access the command line interface. Execute commands and perform tasks efficiently.">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            color: #0f0;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .terminal {
+            border: 2px solid #999;
+            background-color: #111;
+            border-radius: 5px;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            height: 80%;
+            max-height: 600px;
+            box-sizing: border-box;
+            white-space: pre-wrap;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            animation: fade-in 2s forwards;
+            overflow: hidden;
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .message {
+            font-size: 20px;
+            color: #0f0;
+            margin-bottom: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .main-content {
+            display: none;
+            animation: fade-in 2s forwards;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0f0;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #0f0;
+            font-size: 18px;
+        }
+
+        .press-any-key {
+            font-size: 20px;
+            color: #0f0;
+            display: none;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: #0f0;
+            animation: cursor-blink 1s infinite;
+        }
+        
+        @keyframes cursor-blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="message" id="line1"><span style="color: #f00;">root@kali</span>:~$ <span id="sentence1"></span></div>
+        <div class="message" id="line2"><span style="color: #f00;">root@kali</span>:~$ <span id="sentence2"></span></div>
+        <div class="message" id="line3"><span style="color: #f00;">root@kali</span>:~$ <span id="sentence3"></span></div>
+        <div class="message" id="line4"><span style="color: #f00;">root@kali</span>:~$ <span id="sentence4"></span></div>
+        <div class="message" id="line5"><span style="color: #f00;">root@kali</span>:~$ <span id="sentence5"></span></div>
+        <div class="message" id="line6"><span style="color: #f00;">root@kali</span>:~$ <span id="sentence6"></span></div>
+        <div class="message" id="line7"><span style="color: #f00;">root@kali</span>:~$ <span id="sentence7"></span></div>
+        <div class="message" id="line8"><span style="color: #f00;">root@kali</span>:~$ <span id="sentence8"></span></div>
+        <div class="message" id="pressAnyKey" class="press-any-key">Press any key to continue...<span class="cursor"></span></div>
+    </div>
+<script src="/JS/Terminal.js"></script>
+</body>
+</html>

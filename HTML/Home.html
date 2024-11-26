@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuardian - Home Page</title>
+    <meta name="description" content="Explore our platform and discover a world of possibilities. Your journey starts here.">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/navbar.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/sponsors.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/footer.css" type="text/css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a2340;
+            color: #fff;
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            filter: brightness(0.3);
+        }
+
+        .content {
+            z-index: 1;
+        }
+
+        .content h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .cta-btn {
+            background-color: #21b40d;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .cta-btn:hover {
+            background-color: #1a9107;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <a href="./Home.html" class="logo"><img src="../img/logo1.png" alt="logo"></a>
+        <ul class="nav-list">
+            <li><a href="Home.html" >Home</a></li>
+            <li><a href="Ranking.html">Rankings</a></li>
+            <li><a href="Practice.html">Practice</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <div class="user-profile">
+            <img src="../img/User.jpg" alt="User Avatar">
+            <span class="username" id="name"></span>
+            <div class="dropdown-menu">
+                <a href="Profile.html">Profile</a>
+                <a href="HelpCenter.html">Help Center</a>
+                <div class="dropdown-divider"></div>
+                <a href="../index.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="hero">
+    <video class="video-background" autoplay muted loop>
+        <source src="../img/Creed_3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <h1 id="welcomeMessage">Welcome</h1>
+        <h1>Unleash Your Hacking Skills</h1>
+        <p>Join Guardian CTF and become a cybersecurity champion.</p>
+        <a href="Practice.html" class="cta-btn">Start Hacking</a>
+    </div>
+</div>
+<br><br><br>
+<div style="align-content: center; font-size: 50px; text-align: center;">
+    OUR <span style="color: chartreuse;">PARTNERS</span>
+</div>
+<br>
+<div class="container">
+    <div class="logos">
+        <div class="logos-slide">
+            <a href="https://gfuel.com/" title="https://gfuel.com/" target="_blank"><img src="../img/Gfuel.png" alt="Gfuel Energy"></a>
+            <a href="https://www.hackthebox.com/" title="https://www.hackthebox.com/" target="_blank"><img src="../img/HTB.png" alt="HackTheBox"></a>
+            <a href="https://www.huawei.com/" title="https://www.huawei.com/" target="_blank"><img src="../img/Huawei.png" alt="Huawei"></a>
+            <a href="https://www.monsterenergy.com/" title="https://www.monsterenergy.com/" target="_blank"><img src="../img/Monster.png" alt="Monster Energy"></a>
+            <a href="https://www.omantel.om/" title="https://www.omantel.om/" target="_blank"><img src="../img/Omantel.png" alt="Omantel"></a>
+            <a href="https://www.oxy.com/" title="https://www.oxy.com/" target="_blank"><img src="../img/OXY.png" alt="OXY"></a>
+            <a href="https://www.razer.com/" title="https://www.razer.com/" target="_blank"><img src="../img/Razer.png" alt="Razer"></a>
+            <a href="https://www.squ.edu.om/" title="https://www.squ.edu.om/" target="_blank"><img src="../img/SQU.png" alt="SQU"></a>
+            <a href="https://www.vodafone.com/" title="https://www.vodafone.com/" target="_blank"><img src="../img/Vodafone.png" alt="Vodafone"></a>
+        </div>
+        <div class="logos-slide">
+            <a href="https://gfuel.com/" title="https://gfuel.com/" target="_blank"><img src="../img/Gfuel.png" alt="Gfuel Energy"></a>
+            <a href="https://www.hackthebox.com/" title="https://www.hackthebox.com/" target="_blank"><img src="../img/HTB.png" alt="HackTheBox"></a>
+            <a href="https://www.huawei.com/" title="https://www.huawei.com/" target="_blank"><img src="../img/Huawei.png" alt="Huawei"></a>
+            <a href="https://www.monsterenergy.com/" title="https://www.monsterenergy.com/" target="_blank"><img src="../img/Monster.png" alt="Monster Energy"></a>
+            <a href="https://www.omantel.om/" title="https://www.omantel.om/" target="_blank"><img src="../img/Omantel.png" alt="Omantel"></a>
+            <a href="https://www.oxy.com/" title="https://www.oxy.com/" target="_blank"><img src="../img/OXY.png" alt="OXY"></a>
+            <a href="https://www.razer.com/" title="https://www.razer.com/" target="_blank"><img src="../img/Razer.png" alt="Razer"></a>
+            <a href="https://www.squ.edu.om/" title="https://www.squ.edu.om/" target="_blank"><img src="../img/SQU.png" alt="SQU"></a>
+            <a href="https://www.vodafone.com/" title="https://www.vodafone.com/" target="_blank"><img src="../img/Vodafone.png" alt="Vodafone"></a>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="left">
+            <div class="address-container fade1" style="color: white; display: flex; align-items: center;">
+                <img src="../img/Pin.png" alt="Map" style="width: 25px; height: 25px;">
+                <div class="fade1" style="color: white;">
+                    <a href="https://maps.app.goo.gl/WAUDGhhS96zq69Bx8" target="_blank" class="fade1" style="color: white;">
+                        <strong>&nbsp;&nbsp;Al Khoudh street</strong>
+                    </a>
+                    <br>&nbsp;&nbsp;Muscat, Oman
+                </div>
+            </div>
+            <br>
+            <a href="#" class="fade1" style="color: white;">
+                <img src="../img/logo2.png" alt="Logo" style="width: 200px; height: 25px;">
+            </a>
+            <br><br>
+            <p style="opacity: 50%;">COPYRIGHT &copy; 2024 CTF Platform. All rights reserved.</p>
+        </div>
+        <div class="fade1" style="align-items: center; color: white;">
+            <img src="../img/Mail.png" alt="Email" style="width: 30px; height: 30px; margin-right: 10px;">
+            <a href="mailto:support@company.com" style="color: white;" class="fade1">
+                <div style="display: inline-block; vertical-align: middle;">support@company.com</div>
+            </a>
+        </div>
+        <div class="right">
+            <div class="phone-container fade1 rightimg" style="color: white; display: flex; align-items: center;">
+                <img src="../img/Phone.png" alt="Phone" style="width: 30px; height: 30px; margin-right: 10px;">
+                <a href="tel:+1234567890" style="color: white;" class="fade1" id="Contact">Call Us: +968 9120 2050</a>
+            </div>
+            <br>
+            <p>
+                <a href="../HTML/Inquiries.html" target="_blank" class="fade1" style="color: white;">INQUIRIES &nbsp;</a>
+                <a href="../HTML/T&C.html" target="_blank" class="fade1" style="color: white;">TERMS & CONDITIONS &nbsp;</a>
+                <a href="../HTML/About.html" target="_blank" class="fade1" style="color: white;">ABOUT</a>
+            </p>
+            <br>
+            <p>
+                <a href="https://discord.com/" target="_blank" title="Join our Discord Server!" class="white">
+                    <img src="../img/Discord.png" alt="Discord Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" title="Follow us on Instagram!" class="white">
+                    <img src="../img/Instagram.png" alt="Instagram Logo" class="fade1" style="width: 22px; height: 22px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://twitter.com/" target="_blank" title="Follow us on Twitter!" class="white">
+                    <img src="../img/Twitter.png" alt="Twitter Logo" class="fade1" style="width: 20px; height: 18px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://facebook.com/" target="_blank" title="Check out our Facebook Page!" class="white">
+                    <img src="../img/Facebook.png" alt="Facebook Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://reddit.com/" target="_blank" title="Check out our Subreddit!" class="white">
+                    <img src="../img/Reddit.png" alt="Reddit Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://github.com/" target="_blank" title="Check out our Github profile!" class="white">
+                    <img src="../img/Github.png" alt="Github Logo" class="fade1" style="width: 23px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://youtube.com/" target="_blank" title="Subscribe to our YouTube channel!" class="white">
+                    <img src="../img/Youtube.png" alt="Youtube Logo" class="fade1" style="width: 23px; height: 17px;">
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script> 
+    var username = localStorage.getItem('username');
+    document.getElementById('welcomeMessage').innerText = 'Welcome, ' + username + '!';
+</script>
+<script>
+    var username = localStorage.getItem('username');
+    document.getElementById('name').innerText = username;
+</script>
+</body>
+</html>

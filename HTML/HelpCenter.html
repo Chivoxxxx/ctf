@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuardian - Help Center</title>
+    <meta name="description" content="Find answers to your queries and get support for any issues you encounter. Our help center is here for you.">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #1a2340;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        dt {
+            font-weight: bold;
+            font-size: 16pt;
+        }
+
+        dd {
+            font-size: 14pt;
+        }
+
+        .reach-out {
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .feedback-container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: rgb(4, 4, 56);
+        }
+
+        .feedback-container p {
+            margin-bottom: 10px;
+        }
+
+        .feedback-container input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .feedback-container button {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="./Home.html" class="logo"><img src="../img/logo1.png" alt="logo"></a>
+            <ul class="nav-list">
+                <li><a href="Home.html" >Home</a></li>
+                <li><a href="Ranking.html">Rankings</a></li>
+                <li><a href="Practice.html">Practice</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <img src="../img/User.jpg" alt="User Avatar">
+                <span class="username" id="name"></span>
+                <div class="dropdown-menu">
+                    <a href="Profile.html">Profile</a>
+                    <a href="HelpCenter.html">Help Center</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="../index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+    <br><br><br><br><br><br><br><br>
+    <h1 style="text-align: center;">Frequently Asked Questions</h1>
+    <br><br>
+    <dl>
+        <dt>What is a Capture The Flag (CTF) competition?</dt>
+        <dd>Capture The Flag (CTF) is a type of cybersecurity competition designed to challenge its participants to solve computer security problems and/or capture and defend computer systems.</dd>
+        <br><br>
+
+        <dt>How can I participate in a CTF?</dt>
+        <dd>To participate, you'll need to register for an event through our platform. Check our events page for upcoming CTFs and sign up individually or as a team.</dd>
+        <br><br>
+        
+        <dt>What skills are necessary to compete in a CTF?</dt>
+        <dd>Participants should have skills in areas such as web security, cryptography, binary analysis, and network analysis. Basic programming knowledge is also beneficial.</dd>
+        <br><br>
+        
+        <dt>Are there different types of CTFs?</dt>
+        <dd>Yes, there are primarily two types of CTFs: Jeopardy-style and Attack-Defense. Jeopardy-style involves solving specific tasks from a range of categories. Attack-Defense is a real-time battle where teams attack each other’s servers while defending their own.</dd>
+        <br><br>
+        
+        <dt>How are CTF competitions scored?</dt>
+        <dd>Scoring can vary between different competitions, but generally, teams earn points for each challenge they solve. Some challenges may be worth more points due to their difficulty.</dd>
+        <br><br>
+        
+        <dt>Can I see examples of past CTF challenges?</dt>
+        <dd>Yes, you can access archives of past challenges on our website under the 'Archive' section. This is a great way to practice and understand what to expect in a competition.</dd>
+        <br><br>
+        
+        <dt>What tools do I need to participate in a CTF?</dt>
+        <dd>Participants typically need a computer with internet access, a reliable VPN connection, and software tools related to the challenge categories, such as packet sniffers, disassemblers, and web proxies.</dd>
+        <br><br>
+        
+        <dt>Are there any age restrictions for participating in the CTF?</dt>
+        <dd>Some CTF competitions may have age restrictions, especially those aimed at students or professionals. Please check the specific rules for each competition.</dd>
+        <br><br>
+        
+        <dt>How can I prepare for a CTF?</dt>
+        <dd>Prepare by practicing with old CTF challenges, studying security concepts, and participating in related workshops and training sessions.</dd>
+        <br><br>
+        
+        <dt>Is there a code of conduct for CTF participants?</dt>
+        <dd>Yes, we expect all participants to adhere to a code of conduct that promotes a fair, respectful, and inclusive environment. Cheating and disruptive behavior are strictly prohibited.</dd>
+    </dl>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="feedback-container">
+        <p>Was this helpful?</p>
+        <input type="radio" id="yes" name="helpful" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="helpful" value="no">
+        <label for="no">No</label>
+        <br><br>
+        <button type="submit">Submit</button>
+        <br><br>
+        <a href="#help">Need more help?</a>
+    </div>
+<br><br><br><br><br><br><br><br>
+<div class="container-fluid" style="background-color: rgb(4, 4, 56);">
+    <div class="reach-out">
+        <br><br> 
+        <h2 id="help"> If you have any concerns</h2>
+        <h2>Please fill out your contact information.</h2>
+      <br>
+      <form action="">
+        <h3>First Name</h3>
+        <input type="text" style="background-color: #1a2340; color: white; border: 3px solid white; border-radius: 10px;" required>
+        <br><br>
+      <h3>Last Name</h3>
+      <input type="text" style="background-color: #1a2340; color: white; border: 3px solid white; border-radius: 10px;" required>
+      <br><br>
+      <h3>Email</h3>
+      <input type="email" id="email" name="email" style="background-color: #1a2340; color: white; border: 3px solid white; border-radius: 10px;" required>
+      <br><br>
+      <h3>Description</h3>
+      <textarea name="questions" id="questions" cols="60" rows="10" style="background-color: #1a2340; color: white; border: 3px solid white; border-radius: 10px;"></textarea>
+      <br><br>
+      <input type="submit">
+      </form>
+      </div>
+      <br><br>
+</div>
+<footer>
+    <div class="container">
+        <div class="left">
+            <div class="address-container fade1" style="color: white; display: flex; align-items: center;">
+                <img src="../img/Pin.png" alt="Map" style="width: 25px; height: 25px;">
+                <div class="fade1" style="color: white;">
+                    <a href="https://maps.app.goo.gl/WAUDGhhS96zq69Bx8" target="_blank" class="fade1" style="color: white;">
+                        <strong>&nbsp;&nbsp;Al Khoudh street</strong>
+                    </a>
+                    <br>&nbsp;&nbsp;Muscat, Oman
+                </div>
+            </div>
+            <br>
+            <a href="#" class="fade1" style="color: white;">
+                <img src="../img/logo2.png" alt="Logo" style="width: 200px; height: 25px;">
+            </a>
+            <br><br>
+            <p style="opacity: 50%;">COPYRIGHT &copy; 2024 CTF Platform. All rights reserved.</p>
+        </div>
+        <div class="fade1" style="align-items: center; color: white;">
+            <img src="../img/Mail.png" alt="Email" style="width: 30px; height: 30px; margin-right: 10px;">
+            <a href="mailto:support@company.com" style="color: white;" class="fade1">
+                <div style="display: inline-block; vertical-align: middle;">support@company.com</div>
+            </a>
+        </div>
+        <div class="right">
+            <div class="phone-container fade1 rightimg" style="color: white; display: flex; align-items: center;">
+                <img src="../img/Phone.png" alt="Phone" style="width: 30px; height: 30px; margin-right: 10px;">
+                <a href="tel:+1234567890" style="color: white;" class="fade1">Call Us: +968 9120 2050</a>
+            </div>
+            <br>
+            <p>
+                <a href="../HTML/Inquiries.html" target="_blank" class="fade1" style="color: white;">INQUIRIES &nbsp;</a>
+                <a href="../HTML/T&C.html" target="_blank" class="fade1" style="color: white;">TERMS & CONDITIONS &nbsp;</a>
+                <a href="../HTML/About.html" target="_blank" class="fade1" style="color: white;">ABOUT</a>
+            </p>
+            <br>
+            <p>
+                <a href="https://discord.com/" target="_blank" title="Join our Discord Server!" class="white">
+                    <img src="../img/Discord.png" alt="Discord Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" title="Follow us on Instagram!" class="white">
+                    <img src="../img/Instagram.png" alt="Instagram Logo" class="fade1" style="width: 22px; height: 22px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://twitter.com/" target="_blank" title="Follow us on Twitter!" class="white">
+                    <img src="../img/Twitter.png" alt="Twitter Logo" class="fade1" style="width: 20px; height: 18px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://facebook.com/" target="_blank" title="Check out our Facebook Page!" class="white">
+                    <img src="../img/Facebook.png" alt="Facebook Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://reddit.com/" target="_blank" title="Check out our Subreddit!" class="white">
+                    <img src="../img/Reddit.png" alt="Reddit Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://github.com/" target="_blank" title="Check out our Github profile!" class="white">
+                    <img src="../img/Github.png" alt="Github Logo" class="fade1" style="width: 23px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://youtube.com/" target="_blank" title="Subscribe to our YouTube channel!" class="white">
+                    <img src="../img/Youtube.png" alt="Youtube Logo" class="fade1" style="width: 23px; height: 17px;">
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+    <script>
+        var username = localStorage.getItem('username');
+        document.getElementById('name').innerText = username;
+    </script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuardian - Ranking</title>
+    <meta name="description" content="Track your progress and see where you stand among other users. Check your rankings here.">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/navbar.css" >
+    <link rel="stylesheet" href="../CSS/sponsors.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a2340;
+            background: url('../img/Green-Particles-4K.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .rank-container {
+            background-color: rgb(4, 4, 56);
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 50px;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rank-container h2 {
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .view-rankings-btn {
+            background-color: #66FF33;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .view-rankings-btn:hover {
+            background-color: #4CAF50;
+        }
+
+        .rankings-table {
+            background-color: rgb(4, 4, 56);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+        }
+
+        .rankings-table h3 {
+            margin-bottom: 20px;
+            color: #e6e9e5;
+            text-align: center;
+        }
+
+        .rankings-table thead {
+            background-color: #66FF33;
+            color: #000;
+        }
+
+        .rankings-table th, .rankings-table td {
+            border: none;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .rankings-table tbody tr:nth-child(even) {
+            background-color: #444;
+        }
+
+        .rankings-table tbody tr:nth-child(odd) {
+            background-color: #333;
+        }
+
+        .rankings-table tbody tr:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="./Home.html" class="logo"><img src="../img/logo1.png" alt="logo"></a>
+            <ul class="nav-list">
+                <li><a href="Home.html" >Home</a></li>
+                <li><a href="Ranking.html">Rankings</a></li>
+                <li><a href="Practice.html">Practice</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <img src="../img/User.jpg" alt="User Avatar">
+                <span class="username" id="name"></span>
+                <div class="dropdown-menu">
+                    <a href="Profile.html">Profile</a>
+                    <a href="HelpCenter.html">Help Center</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="../index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<br><br><br><br><br><br><br>
+<div class="container">
+    <div class="row" style="justify-content: center;">
+        <div class="col-md-6">
+            <div class="rank-container">
+                <br>
+                <h2>Your Current Rank: #31</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="rankings-table">
+                <h3>Top 10 in Oman</h3>
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Player</th>
+                            <th scope="col">Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>🥇 NeonNinja</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>🥈 PhantomPirate</td>
+                            <td>950</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>🥉 MysticWraith</td>
+                            <td>920</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>ShadowStriker</td>
+                            <td>900</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>DarkDragon</td>
+                            <td>880</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>BlazeKnight</td>
+                            <td>870</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>FrostFury</td>
+                            <td>860</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>LunaShadow</td>
+                            <td>850</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>ThunderStorm</td>
+                            <td>840</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>NightmareNinja</td>
+                            <td>830</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br>
+<footer>
+    <div class="container">
+        <div class="left">
+            <div class="address-container fade1" style="color: white; display: flex; align-items: center;">
+                <img src="../img/Pin.png" alt="Map" style="width: 25px; height: 25px;">
+                <div class="fade1" style="color: white;">
+                    <a href="https://maps.app.goo.gl/WAUDGhhS96zq69Bx8" target="_blank" class="fade1" style="color: white;">
+                        <strong>&nbsp;&nbsp;Al Khoudh street</strong>
+                    </a>
+                    <br>&nbsp;&nbsp;Muscat, Oman
+                </div>
+            </div>
+            <br>
+            <a href="#" class="fade1" style="color: white;">
+                <img src="../img/logo2.png" alt="Logo" style="width: 200px; height: 25px;">
+            </a>
+            <br><br>
+            <p style="opacity: 50%;">COPYRIGHT &copy; 2024 CTF Platform. All rights reserved.</p>
+        </div>
+        <div class="fade1" style="align-items: center; color: white;">
+            <img src="../img/Mail.png" alt="Email" style="width: 30px; height: 30px; margin-right: 10px;">
+            <a href="mailto:support@company.com" style="color: white;" class="fade1">
+                <div style="display: inline-block; vertical-align: middle;">support@company.com</div>
+            </a>
+        </div>
+        <div class="right">
+            <div class="phone-container fade1 rightimg" style="color: white; display: flex; align-items: center;">
+                <img src="../img/Phone.png" alt="Phone" style="width: 30px; height: 30px; margin-right: 10px;">
+                <a href="tel:+1234567890" style="color: white;" class="fade1">Call Us: +968 9120 2050</a>
+            </div>
+            <br>
+            <p>
+                <a href="../HTML/Inquiries.html" target="_blank" class="fade1" style="color: white;">INQUIRIES &nbsp;</a>
+                <a href="../HTML/T&C.html" target="_blank" class="fade1" style="color: white;">TERMS & CONDITIONS &nbsp;</a>
+                <a href="../HTML/About.html" target="_blank" class="fade1" style="color: white;">ABOUT</a>
+            </p>
+            <br>
+            <p>
+                <a href="https://discord.com/" target="_blank" title="Join our Discord Server!" class="white">
+                    <img src="../img/Discord.png" alt="Discord Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" title="Follow us on Instagram!" class="white">
+                    <img src="../img/Instagram.png" alt="Instagram Logo" class="fade1" style="width: 22px; height: 22px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://twitter.com/" target="_blank" title="Follow us on Twitter!" class="white">
+                    <img src="../img/Twitter.png" alt="Twitter Logo" class="fade1" style="width: 20px; height: 18px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://facebook.com/" target="_blank" title="Check out our Facebook Page!" class="white">
+                    <img src="../img/Facebook.png" alt="Facebook Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://reddit.com/" target="_blank" title="Check out our Subreddit!" class="white">
+                    <img src="../img/Reddit.png" alt="Reddit Logo" class="fade1" style="width: 20px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://github.com/" target="_blank" title="Check out our Github profile!" class="white">
+                    <img src="../img/Github.png" alt="Github Logo" class="fade1" style="width: 23px; height: 20px;">&nbsp;&nbsp;
+                </a>
+                <a href="https://youtube.com/" target="_blank" title="Subscribe to our YouTube channel!" class="white">
+                    <img src="../img/Youtube.png" alt="Youtube Logo" class="fade1" style="width: 23px; height: 17px;">
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script>
+    var username = localStorage.getItem('username');
+    document.getElementById('name').innerText = username;
+</script>
+</body>
+</html>
